@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        strong {
+            color: green;
+        }
+
+        .akhil {
+            background-color: black;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            border: solid red;
+        }
+
+        .akhil ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .akhil ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .akhil ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            padding: 50px;
+            background-color: lightskyblue;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: green;
+            position: sticky;
+            bottom: 0;
+        }
+
+        .btn {
+            width: 150px;
+            height: 30px;
+            border: 4px solid red;
+            border-radius: 20px;
+        }
+
+        p {
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: black;
+            text-align: center;
+        }
+
+        .akhilesh {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .class {
+            border: solid 2px white;
+        }
+
+        .o {
+            color: black;
+            text-decoration: none;
+        }
+
+        .div-2 {
+            justify-items: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="akhil">
+        <ul>
+            <li>
+                <p>AUTO INSURANCE CLAIMS.</p>
+            </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="/predict">Predict</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+    <div class="akhilesh">
+        <h2>Insurance Prediction Form</h2>
+        <form action="/predict" method="post">
+            <label for="months_as_customer">Months as Customer:</label>
+            <input type="text" id="months_as_customer" name="months_as_customer" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required><br><br>
+
+            <label for="policy_state">Policy State:</label>
+            <input type="text" id="policy_state" name="policy_state" required><br><br>
+
+            <label for="policy_csl">Policy CSL:</label>
+            <input type="text" id="policy_csl" name="policy_csl" required><br><br>
+
+            <label for="policy_deductable">Policy Deductable:</label>
+            <input type="text" id="policy_deductable" name="policy_deductable" required><br><br>
+
+            <label for="policy_annual_premium">Policy Annual Premium:</label>
+            <input type="text" id="policy_annual_premium" name="policy_annual_premium" required><br><br>
+
+            <label for="umbrella_limit">Umbrella Limit:</label>
+            <input type="text" id="umbrella_limit" name="umbrella_limit" required><br><br>
+
+            <label for="insured_zip">Insured ZIP:</label>
+            <input type="text" id="insured_zip" name="insured_zip" required><br><br>
+
+            <label for="insured_sex">Insured Sex:</label>
+            <input type="text" id="insured_sex" name="insured_sex" required><br><br>
+
+            <label for="insured_education_level">Insured Education Level:</label>
+            <input type="text" id="insured_education_level" name="insured_education_level" required><br><br>
+
+            <label for="insured_occupation">Insured Occupation:</label>
+            <input type="text" id="insured_occupation" name="insured_occupation" required><br><br>
+
+            <label for="insured_hobbies">Insured Hobbies:</label>
+            <input type="text" id="insured_hobbies" name="insured_hobbies" required><br><br>
+
+            <label for="insured_relationship">Insured Relationship:</label>
+            <input type="text" id="insured_relationship" name="insured_relationship" required><br><br>
+
+            <label for="capital-gains">Capital Gains:</label>
+            <input type="text" id="capital-gains" name="capital-gains" required><br><br>
+
+            <label for="capital-loss">Capital Loss:</label>
+            <input type="text" id="capital-loss" name="capital-loss" required><br><br>
+
+            <label for="incident_type">Incident Type:</label>
+            <input type="text" id="incident_type" name="incident_type" required><br><br>
+
+            <label for="collision_type">Collision Type:</label>
+            <input type="text" id="collision_type" name="collision_type" required><br><br>
+
+            <label for="incident_severity">Incident Severity:</label>
+            <input type="text" id="incident_severity" name="incident_severity" required><br><br>
+
+            <label for="authorities_contacted">Authorities Contacted:</label>
+            <input type="text" id="authorities_contacted" name="authorities_contacted" required><br><br>
+
+            <label for="incident_state">Incident State:</label>
+            <input type="text" id="incident_state" name="incident_state" required><br><br>
+
+            <label for="incident_city">Incident City:</label>
+            <input type="text" id="incident_city" name="incident_city" required><br><br>
+
+            <label for="incident_hour_of_the_day">Incident Hour of the Day:</label>
+            <input type="text" id="incident_hour_of_the_day" name="incident_hour_of_the_day" required><br><br>
+
+            <label for="number_of_vehicles_involved">Number of Vehicles Involved:</label>
+            <input type="text" id="number_of_vehicles_involved" name="number_of_vehicles_involved" required><br><br>
+
+            <label for="property_damage">Property Damage:</label>
+            <input type="text" id="property_damage" name="property_damage" required><br><br>
+
+            <label for="bodily_injuries">Bodily Injuries:</label>
+            <input type="text" id="bodily_injuries" name="bodily_injuries" required><br><br>
+
+            <label for="witnesses">Witnesses:</label>
+            <input type="text" id="witnesses" name="witnesses" required><br><br>
+
+            <label for="police_report_available">Police Report Available:</label>
+            <input type="text" id="police_report_available" name="police_report_available" required><br><br>
+
+            <label for="total_claim_amount">Total Claim Amount:</label>
+            <input type="text" id="total_claim_amount" name="total_claim_amount" required><br><br>
+
+            <label for="injury_claim">Injury Claim:</label>
+            <input type="text" id="injury_claim" name="injury_claim" required><br><br>
+
+            <label for="property_claim">Property Claim:</label>
+            <input type="text" id="property_claim" name="property_claim" required><br><br>
+
+            <label for="auto_make">Auto Make:</label>
+            <input type="text" id="auto_make" name="auto_make" required><br><br>
+
+            <label for="auto_model">Auto Model:</label>
+            <input type="text" id="auto_model" name="auto_model" required><br><br>
+
+            <label for="auto_year">Auto Year:</label>
+            <input type="text" id="auto_year" name="auto_year" required><br><br>
+
+            <label for="months_bw_incident_and_bind">Months Between Incident and Bind:</label>
+            <input type="text" id="months_bw_incident_and_bind" name="months_bw_incident_and_bind" required><br><br>
+
+            <label for="incident_within_customership">Incident Within Customership:</label>
+            <input type="text" id="incident_within_customership" name="incident_within_customership" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br><br>
+    <h1>The Insurance Fraud Detection Status:</h1>
+    <h1>{{predict}}</h1>
+</body>
+
+</html>
